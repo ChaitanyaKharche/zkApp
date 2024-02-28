@@ -1,0 +1,9 @@
+
+type database <ocaml from="Database" t="t"> = abstract
+
+type t = {
+	port: int;
+	database: database;
+	alias_alphabet: string;
+	reserved: string list;
+}
